@@ -26,7 +26,7 @@ node{
     }
     
     stage('Maven Build'){
-        sh "${mavenCMD} clean package"        
+        sh "${mavenCMD}"        
     }
     
     stage('Publish Test Reports'){
