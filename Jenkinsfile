@@ -26,7 +26,7 @@ node{
     }
     
     stage('Maven Build'){
-        sh "${mavenCMD}"        
+        sh "sudo ${mavenCMD}"        
     }
     
     stage('Publish Test Reports'){
